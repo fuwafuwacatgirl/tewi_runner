@@ -311,8 +311,8 @@ function draw(){
 
   // Score
   ctx.fillStyle=C[0];
-  ctx.font= "8px monospace";
-  ctx.fillText(String(score/6|0).padStart(5, "0"), 4, 10);
+  ctx.font= "16px monospace";
+  ctx.fillText(String(score/6|0).padStart(5, "0"), 4, 15);
 
   // Game Over
   if(dead){
@@ -320,8 +320,8 @@ function draw(){
     ctx.fillRect(31, 48, 98, 35);
     ctx.fillStyle=C[4];
     ctx.textAlign="center";
-    ctx.fillText("GAME OVER", 80, 61);
-    ctx.fillText("Z / SPACE", 80, 74);
+    ctx.fillText("GAME OVER", 80, 65);
+    ctx.fillText("Z / SPACE", 80, 80);
     ctx.textAlign="left";
   }
 }
